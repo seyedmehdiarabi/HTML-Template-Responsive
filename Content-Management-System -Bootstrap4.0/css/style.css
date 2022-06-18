@@ -1,0 +1,58 @@
+body{
+    direction: rtl;
+    font-family: 'iransans';
+}
+
+#sidebar a ,#sidebar i{
+    color: #fff;
+}
+
+#sidebar .nav-link{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#sidebar{
+    height: calc(100vh - 72px);
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+@media (max-width:768px){
+    #sidebar{
+        height: calc(100vh - 56px);
+    }
+}
+
+#sidebar .fa-chevron-left{
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+#sidebar .nav-link .fa-chevron-left{
+    transform: rotate(-90deg);
+}
+
+#sidebar .nav-link.collapsed .fa-chevron-left{
+    transform: rotate(0deg);
+}
+
+#sidebar.collapse.show{
+    transform: translate(0,0);
+}
+
+#sidebar.collapsing{
+    transform: translate(100%,0);
+}
+
+.fa-angle-double-right{
+    transition: all 0.5s;
+}
+
+.fa-angle-double-right.collapsed{
+    transform: rotate(180deg);
+}
+
+#main-content{
+    transition: all 0.3s;
+}

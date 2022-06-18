@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white">
+        <div class="d-flex align-items-center">
+            <a href="#" class="navbar-brand display-2">پنل مدیریت محتوا</a>
+            <i class="fas fa-angle-double-right h4 text-secondary mr-3" data-toggle="collapse" data-target="#sidebar" style="cursor: pointer;"></i>
+        </div>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mr-3 d-md-flex justify-content-md-between" id="mainmenu">
+
+            <nav class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-tachometer-alt text-success"></i>
+                    پیشخوان
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-users text-info"></i>
+                    کاربران
+                </a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                    <i class="fas fa-cog text-danger"></i>
+                    تنظیمات
+                </a></li>
+            </nav>
+
+            <nav class="navbar-nav align-items-center d-none d-md-flex">
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-danger">5</span>
+                    <i class="far fa-bell"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center bg-light">شما 5 اعلان دارید</div>
+                        <a href="#" class="dropdown-item text-secondary">یک سفارش جدید ایجاد شد</a>
+                        <a href="#" class="dropdown-item text-secondary">یک کاربر جدید وارد شد</a>
+                    </div>
+                </a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-warning">8</span>
+                    <i class="fas fa-tasks"></i>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center bg-light">شما 8 دستور در حال اجرا دارید</div>
+                        <a href="#" class="dropdown-item text-secondary">یک سفارش جدید ایجاد شد</a>
+                        <a href="#" class="dropdown-item text-secondary">یک کاربر جدید وارد شد</a>
+                    </div>
+                </a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="badge badge-pill badge-info">12</span>
+                    <i class="far fa-comment"></i> 
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center bg-light">شما 12 پیغام جدید دارید</div>
+                        <a href="#" class="dropdown-item text-secondary">یک سفارش جدید ایجاد شد</a>
+                        <a href="#" class="dropdown-item text-secondary">یک کاربر جدید وارد شد</a>
+                    </div>
+                </a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+                    <img src="images/1.png" width="40" alt="">
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center bg-light">حساب کاربری</div>
+                        <a href="#" class="dropdown-item text-secondary">پروفایل</a>
+                        <a href="#" class="dropdown-item text-secondary">خروج</a>
+                    </div>
+                </a></li>
+            </nav>
+        </div>
+
+
+    </nav>
+    <!-----------------------Navbar END-------------------------->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div id="sidebar" class="col-5 col-sm-4 col-md-2 bg-dark collapse show position-fixed">
+                <ul class="nav d-flex flex-column pr-0">
+                    <li class="nav-item my-1"><a href="#submenu1" class="nav-link collapsed" data-toggle="collapse">
+                        <i class="fas mr-2 fa-pen"></i>
+                        نوشته ها
+                        <i class="fas fa-chevron-left float-right"></i>
+                    </a>
+                    <div class="collapse bg-secondary rounded" id="submenu1">
+                        <ul class="nav pr-0">
+                            <li class="nav-item"><a href="#" class="nav-link">مشاهده نوشته ها</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">افزودن نوشته</a></li>
+                        </ul>
+                    </div>
+                </li>
+                    <li class="nav-item my-1"><a href="#submenu2" class="nav-link collapsed" data-toggle="collapse">
+                        <i class="fas mr-2 fa-shopping-cart"></i>
+                        محصولات
+                        <i class="fas fa-chevron-left float-right"></i>
+                    </a>
+                    <div class="collapse bg-secondary rounded" id="submenu2">
+                        <ul class="nav pr-0">
+                            <li class="nav-item"><a href="#" class="nav-link">مشاهده محصولات</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">افزودن محصول</a></li>
+                        </ul>
+                    </div>
+                </li>
+                    <li class="nav-item my-1"><a href="#" class="nav-link">
+                        <i class="fas mr-2 fa-comment"></i>
+                        دیدگاه ها
+                    </a></li>
+                    <li class="nav-item my-1"><a href="#" class="nav-link">
+                        <i class="fas mr-2 fa-video"></i>
+                        رسانه ها
+                    </a></li>
+                    <li class="nav-item my-1"><a href="#" class="nav-link">
+                        <i class="fas mr-2 fa-users"></i>
+                        کاربران
+                    </a></li>
+                    <li class="nav-item my-1"><a href="#" class="nav-link">
+                        <i class="fas mr-2 fa-cog"></i>
+                        تنظیمات
+                    </a></li>
+                </ul>
+            </div>
+
+            <!-----------------------Sidebar END-------------------------->
+
+            <div id="main-content" class="col-12 col-md-10 p-4 ml-auto">
+
+
+                <div class="card-deck">
+                    
+                    <div class="card text-white bg-warning mb-3 border-0 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chart-bar h5 float-right"></i>
+                            <h5 class="card-title">53000</h5>
+                            <p class="card-text">تعداد بازدید روزانه</p>
+                            <canvas id="chart1" class="w-100" height="100"></canvas>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-primary mb-3 border-0 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-users h5 float-right"></i>
+                            <h5 class="card-title">25000</h5>
+                            <p class="card-text">تعداد کاربران جدید</p>
+                            <canvas id="chart2" class="w-100" height="100"></canvas>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-danger mb-3 border-0 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chart-pie h5 float-right"></i>
+                            <h5 class="card-title">15000</h5>
+                            <p class="card-text">تعداد فروش روزانه</p>
+                            <canvas id="chart3" class="w-100" height="100"></canvas>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-success mb-3 border-0 shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line h5 float-right"></i>
+                            <h5 class="card-title">924</h5>
+                            <p class="card-text">تعداد محصولات جدید</p>
+                            <canvas id="chart4" class="w-100" height="100"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-------------Card deck--------------->
+
+                <div class="card text-dark bg-white my-3 border-0 shadow">
+                    <div class="card-body">
+                        <div class="d-flex mb-4 justify-content-between align-items-center">
+                            <h5 class="card-title">آمار بازدید سایت</h5>
+                        
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> روز
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> ماه
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> سال
+                                </label>
+                            </div>
+                        
+                            <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="گرفتن خروجی">
+                                <i class="fas fa-file-export"></i>
+                            </button>
+                        </div>
+
+                        <canvas id="visit" class="w-100" height="300"></canvas>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">بازدید کل</strong>
+                                <p class="my-3">53000 کاربر (40%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-info" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">بازدید های یکتا</strong>
+                                <p class="my-3">49000 کاربر (35%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-warning" style="width: 35%;"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">بازدید صفحات سایت</strong>
+                                <p class="my-3">85000 کاربر (80%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-primary" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">کاربران جدید</strong>
+                                <p class="my-3">20000 کاربر (25%)</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-success" style="width: 25%;"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                                <strong class="text-muted">نرخ خروج</strong>
+                                <p class="my-3">45%</p>
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar bg-danger" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------Visits--------------->
+
+                <div class="card text-dark bg-white my-4 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">گزارشات فروش</h5>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered ">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>نام محصول</th>
+                                        <th>ایمیل کاربر</th>
+                                        <th>درگاه پرداخت</th>
+                                        <th>وضعیت</th>
+                                        <th>زمان تراکنش</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>آموزش بوت استرپ 4 | جادوی رابط کاربری</td>
+                                        <td>k@gmail.com</td>
+                                        <td>بانک ملت</td>
+                                        <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                        <td>
+                                            10 دقیقه پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>آموزش مقدماتی تا پیشرفته جاوا اسکریپت</td>
+                                        <td>y@gmail.com</td>
+                                        <td>زرین پال</td>
+                                        <td><span class="btn btn-danger d-block shadow">لغو شده</span></td>
+                                        <td>
+                                            20 دقیقه پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>آموزش مقدماتی تا پیشرفته جی کوئری</td>
+                                        <td>s@gmail.com</td>
+                                        <td>بانک ملت</td>
+                                        <td><span class="btn btn-info d-block shadow">در انتظار پرداخت</span></td>
+                                        <td>
+                                            1 ساعت پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>آموزش کامل CSS و CSS3</td>
+                                        <td>r@gmail.com</td>
+                                        <td>زرین پال</td>
+                                        <td><span class="btn btn-success d-block shadow">تکمیل شده</span></td>
+                                        <td>
+                                            2 ساعت پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>آموزش طراحی سایت بدون کدنویسی</td>
+                                        <td>t@gmail.com</td>
+                                        <td>بانک ملت</td>
+                                        <td><span class="btn btn-info d-block shadow">در انتظار پرداخت</span></td>
+                                        <td>
+                                            3 ساعت پیش
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>آموزش راه اندازی فروشگاه اینترنتی</td>
+                                        <td>p@gmail.com</td>
+                                        <td>زرین پال</td>
+                                        <td><span class="btn btn-danger d-block shadow">لغو شده</span></td>
+                                        <td>
+                                            4 ساعت پیش
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+   
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
